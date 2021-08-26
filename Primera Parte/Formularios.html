@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+        <h2>form</h2>
+        <p>Se usa para enviar datos sin representación gráfica.</p>
+        <p>Atributos de form:</p>
+        <ul>
+            <li>action</li>
+                <ul>
+                    <li>Único atributo requerido.</li>
+                    <li>Es necesario mandar una URL.</li>
+                </ul>
+            <li>method</li>
+                <ul>
+                    <li>Forma de envío.</li>
+                    <li>GET (por defecto)| POST</li>
+                    <ul>
+                        <li>GET (Formulario de búsqueda)
+                            <ul>
+                                <li>Datos visibles (URL)</li>
+                                <li>Limitada</li>
+                                <li>Favoritos</li>
+                            </ul>
+                        </li>
+                        <li> POST (Formulario de registro)
+                            <ul>
+                                <li>Datos no visibles</li>
+                                <li>Sin límite</li>
+                                <li>Ficheros</li>
+                            </ul>
+                        </li>  
+                    </ul>          
+                </ul>
+
+            <li>accept-charset</li>
+                <ul>
+                    <li>Codificación de caractéres</li>
+                    <ul>
+                        <li>UTF-8 (Hay que usar este)</li>
+                        <li>ISO-8859-1 (Alfabeto latino, poco común)</li>
+                    </ul>
+                </ul>
+
+            <li>enctype</li>
+            <ul>
+                <li>Tipo de Codificación</li>
+                <ul>
+                    <li>application/x-www-form-urlencoded (por defecto " " = "+")</li>
+                    <li>multipart/form-data (subir ficheros mediante formularios)</li>
+                    <li>text/plain (convierte los espacios en signos de sumar)</li>
+                </ul>
+            </ul>
+
+            <li>input (no tiene etiqueta de cierre)</li>
+            <ul>
+                <li>Texto</li>
+                <li>Casillas de verificación</li>
+                <li>Casillas de opción (btón radio)</li>
+                <li>Archivos</li>
+                <li>Texto enmascarado (password)</li>
+                <li>Ocultos</li>
+                <li>Botones</li>
+                <li>Atributos: </li>
+                <ul>
+                    <li>name: </li>
+                    <ul>
+                        <li>Texto.</li>
+                        <li>Nombre del campo.</li>
+                        <li>Ej. "input name = "email"/"</li>
+                    </ul>
+                    <li>type (define en qué se convertirá el texto introducido)</li>
+                    <ul>
+                        <li>"text" -> Texto (Por defecto)</li>
+                            <ul>
+                                <li>maxlength = "número"</li>
+                                <ul><li>Sirve para acotar a un máximo lo que se vaya a escribir.</li></ul>
+                                <li>size = "número"</li>
+                                <ul><li>Tamaño del recuadro en número de caracteres.</li></ul>
+                                <li>value</li>
+                                <ul><li>Valor por defecto de la casilla.</li><li>Ej. input type = "text" value = "Buscar..."/</li></ul>
+                            </ul>
+
+
+                        <li>"checkbox" -> casilla de verificación</li>
+                        <ul>
+                            <li>name = nombre del grupo</li>
+                            <ul><li>Todas las casillas que pertenezcan al mismo grupo deberán tener el mismo "name"</li>
+                            <li>Ej. 
+                                <ul>
+                                <li>input type = "checkbox" name = "temas" /> HTML</li>
+                                <li>input type = "checkbox" name = "temas" /> CSS</li>
+                                </ul>
+                            <li>checked = "checked"</li>
+                            <ul><li>Si aparece aceptada por defecto.</li></ul>
+                            <li>value <strong>(importante)</strong></li>
+                            <ul><li>Indica lo que debe devolver la casilla que esté activa.</li><li>Ej. input type = "checkbox" value = "HTML"/</li></ul>
+                        </ul>
+
+
+                        <li>"radio" -> casilla de opción (radio button)</li>
+                        <ul>
+                            <li>Serán igual que las checkbox con la diferencia de que solo se puede elegir 1.</li>
+                            <li>name = nombre del grupo <strong>(importante)</strong></li>
+                            <ul><li>Todas las casillas que pertenezcan al mismo grupo deberán tener el mismo "name"</li>
+                            <li>Ej. 
+                                <ul>
+                                <li>input type = "radio" name = "temas" /> HTML</li>
+                                <li>input type = "radio" name = "temas" /> CSS</li>
+                                </ul>
+                            <li>checked = "checked"</li>
+                            <ul><li>Si aparece aceptada por defecto.</li></ul>
+                            <li>value radio</li>
+                            <ul><li>Indica lo que debe devolver la casilla que esté activa.</li><li>Ej. input type = "radio" value = "HTML"/>HTML</li></ul>
+                        </ul>
+
+
+                        <li>"file" -> subir fichero</li>
+                        <ul>
+                            <li>input type = "file" accpecpt = "image/gif"</li>
+                            <ul><li>Con accept decimos que tipo de ficheros se pueden agregar.</li></ul>
+                            <li>form enctype = "multipart/form-data"</li>
+                            <ul><li>enctype tiene que estar bien puesto para que permita recoger un fichero.</li></ul>
+                        </ul>
+
+
+                        <li>"password" -> texto enmascarado</li>
+                        <ul>Mismos atributos que los campos de tipo "text", con la diferencia que al escribir en vez de aparecer letras aparecen "*".</ul>
+
+                        <li>"hidden" -> campo oculto</li>
+                        
+                        <li>"button" -> botón</li>
+                        <ul>
+                            <li>"button" -> Botón sin acción (Para usar este tipo será necesario el uso de JS)</li>
+                            <ul><li>value = "texto del botón"</li></ul>
+                            <li>"submit" -> botón de enviar</li>
+                                <ul>
+                                    <li>Envía el formulario.</li>
+                                    <li>value = "texto del botón"</li>
+                                </ul>
+                            <li>"image" -> imange como botón de enviar (en desuso)</li>
+
+                            <li>"reset" -> botón de limpiar</li>
+                            <ul>
+                                <li>Reinicia el formulario.</li>
+                                <li>value = "texto del botón"</li>
+                            </ul>
+                        </ul>
+
+                    </ul>
+
+                    <li>disabled</li>
+                    <ul><li>Desabilita un campo para que no se pueda ver.</li></ul>
+
+
+                    <li>readonly</li>
+                    <ul><li>Muestra el texto pero no permite editarlo.</li></ul>
+                </ul>
+            </ul>
+
+            <li>select</li>
+            <ul>
+                <li>Listas desplegables.</li>
+                <li>Listas de selección múltiple.</li>
+                <ul>
+                    <li>multiple = "multiple"</li>
+                </ul>
+            </ul>
+
+            <p>Ejemplo de select (listas)</p>
+            <select multiple>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+            </select>
+            <select>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+            </select>
+            <select>
+                <optgroup label="HTML">
+                    <option value="tables">Tablas</option>
+                    <option value="forms">Formularios</option>
+                </optgroup>
+                <optgroup label="CSS">
+                    <option value="colors">Les colorines</option>
+                </optgroup>
+            </select>
+            
+
+            <li>textarea</li>
+            <ul>
+                <li>cols = "numero"</li>
+                <ul><li>Define el ancho del texArea (20 por defecto)</li></ul>
+                <li>rows = "numero"</li>
+                <ul><li>Define el alto del textArea (2 por defecto)</li></ul>
+            </ul>
+            <textarea cols="20" rows="3"></textarea>
+
+            <li>label</li>
+            <ul>
+                <li>No muestra nada por pantalla, pero ayuda a la <strong>Usabilidad</strong> y a la <strong>Accesibilidad</strong></li>
+            </ul>
+
+            <li>fieldset</li>
+            <ul>
+                <li>Agrupa elementos de un formulario que tienen que ver entre sí.</li>
+                <ul><li>Se le puede dotar del atributo legend, para darle un título al marco</li></ul>
+            </ul>
+            <fieldset><legend>Buen fieldset</legend>
+                Nombre: <input type="text"/><br>
+                Contraseña: <input type="password"/><br>
+            </fieldset>
+            <fieldset><legend>Temas</legend>
+                <input type= "checkbox"/>HTML
+                <input type= "checkbox"/>CSS
+            </fieldset>
+
+        <h2>Aportaciones de HTML5</h2>
+        <h3>Atributos para input type:</h3>
+        <p>url -> Únicamente será valida una <strong>URL</strong> con su respectivo formato.</p>
+        URL <input type="url" name="url"/>
+        
+        <p>tel -> Únicamente será valido el patrón <strong>(+[0-9]{2} [0-9]{9})</strong> Ej. +34 928928928</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp; Al usar esta opción en dispositivos móviles se mostrará el teclado numérico en vez de el teclado entero.</p>
+        &nbsp;&nbsp;&nbsp;Teléfono: <input type="tel" name="telefono"/>
+        
+        <p>email -> Únicamente será válido un <strong>correo electrónico</strong> con su respectivo formato.</p>
+        
+        <p>number -> Únicamente un <strong>valor numérico</strong>, el cuál se puede acotar mediante <em>"min/max"</em> o se le puede asignar un valor concreto con <em>"value"</em>.</p>
+        
+        <p>color -> El usuario podrá elegir un <strong>color</strong> dentro de una paleta de colores.</p>
+        &nbsp;&nbsp;&nbsp;Color: <input type="color" name="colorHex"/>
+        
+        <p>search -> Añadir un <strong>campo de búsqueda</strong> de forma correcta.</p>
+        
+        <p>range -> El usuario podrá elegir un <strong>número</strong> dentro de un rango acotado por <em>"min"</em> y <em>"max"</em>.</p>
+        <input type="range" name="rango" min="0" max="10"/>
+
+        <p>datetime -> Permite seleccionar <strong>la hora, el día, mes y año y la zona horaria</strong>.</p>
+        
+        <p>datetime-local -> Permite seleccionar lo mismo que en el anterior pero <strong>sin la zona horaria</strong>.</p>
+        
+        <p>date -> Permite seleccionar <strong>una fecha con <em>día, mes y año</em></strong>.</p>
+        &nbsp;&nbsp;&nbsp;Fecha: <input type="date" name="fecha"/>
+        
+        <p>month -> Permite seleccionar <strong>un mes</strong> de un año específicos.</p>
+        
+        <p>week -> Permite seleccionar <strong>una semana</strong>de un mes y un año específicos.</p>
+        
+        <p>time -> Permite seleccionar <strong>la hora con minutos</strong>.</p>
+        &nbsp;&nbsp;&nbsp;Hora: <input type="time" name="hora"/>
+
+
+        <h2>Atributos de contenido:</h2>
+        <p>autocomplete -> Nos dice si una parte del formulario o este entero debe tener la opción de <strong>autocompletado</strong>.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Es posible tener el formulario con autocompletado a <em>on</em>, pero que algún input lo tenga en <em>off</em></p>
+        
+        <p>autofocus -> Nos dice en qué punto debe <strong>centrarse</strong> primeramente el usuario.</p>
+        
+        <p>step -> Indica de cuanto en cuanto puede pasar un valor (step = "2" -> 0, 2, 4, 6, 8...).</p>
+        
+        <p>pattern -> Permite realizar un input en base a una <strong>expresión regular</strong>.</p>
+        &nbsp;&nbsp;&nbsp;Prefijo del país: <input type="text" name="prefPais" pattern="[a-Za-z]{3}" title="Código de 3 letras"/>
+        
+        <p>placeholder -> <strong>Referencia</strong> de lo que debería de poner el usuario.</p>
+        &nbsp;&nbsp;&nbsp;Nombre: <input type="text" name="name" placeholder="Cristóbal José" title="Escribe tu nombre"/>
+        
+        <p>required -> Especifica que el input que lo contenga tiene que <strong>estar rellenado obligatoriamente antes de enviar el formulario</strong>.</p>
+        
+        <p> -> <strong></strong> .</p>
+
+</body>
+</html>

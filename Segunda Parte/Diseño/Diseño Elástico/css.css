@@ -1,0 +1,43 @@
+/*No existe un ancho total*/
+body{
+    background-color: #2E3440; 
+    color: #ECEFF4;
+    padding: 0; margin: 0;
+}
+
+/*Links genéricos*/
+a:link{color: #EBCB8B;}
+a:visited{color: #e0b080;}
+a:hover{color: #B48EAD}
+
+#cabecera, #pie{
+    text-align: center;
+}
+
+#menu, #contenido, #info{
+    padding: 0; margin: 0;
+}
+
+/*Se le asigna un ancho predefinido*/
+#menu{
+    position: absolute;
+    width: 10em;
+}
+
+#contenido{
+    position: relative;
+    left: 10em; 
+    margin-right: 35em;
+}
+
+/*Se le asigna un ancho predefinido*/
+#info{
+    position: absolute;
+    margin-left: 10px;
+    right: 0;
+    width: 25em;
+}
+
+#pie{
+    margin-top: 50px;
+}

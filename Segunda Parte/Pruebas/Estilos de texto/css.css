@@ -1,0 +1,49 @@
+body{background-color: #2E3440; color: #ECEFF4;}
+legend{font-size: larger; font-weight: bold;}
+
+/*--------------------------------------------------------*/
+.fam{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li#serif{font-family: serif;}
+li#s-serif{font-family: sans-serif;}
+li#curs{font-family: cursive;}
+li#fant{font-family: fantasy;}
+li#monos{font-family: monospace;}
+
+.size{font-size: large;}
+
+.weight{font-weight: bolder;}
+
+.style{font-style: oblique;}
+
+.variant{font-variant: small-caps;}
+
+/*--------------------------------------------------------*/
+
+.align{text-align: center;}
+
+.indent{text-indent: 1cm;}
+
+.decor{text-decoration: none;}
+span#under{text-decoration: underline;}
+span#over{text-decoration: overline;}
+span#line{text-decoration: line-through;}
+span#blink{text-decoration: blink;}
+
+        
+.transf{text-transform: none;}
+span#cap{text-transform: capitalize;}
+span#upper{text-transform: uppercase;}
+span#lower{text-transform: lowercase;}
+span#none{text-transform: none;}
+
+/*--------------------------------------------------------*/
+
+.l-spacing{letter-spacing: 0.35em;}
+.w-spacing{letter-spacing: 0.10em;}
+.l-hegiht{letter-spacing: 0.5em;line-height: 2em;}
+
+.w-space{white-space: pre;}
+p#pre{white-space: pre;}
+        

@@ -1,0 +1,41 @@
+/*Todos los width juntos tienen que contener el ancho total de la página*/
+body{
+    background-color: #2E3440; 
+    color: #ECEFF4;
+    width: 80em; /*Con esto se le asigna un ancho fijo a la página web*/
+    padding: 0; margin: 0;
+}
+
+/*Links genéricos*/
+a:link{color: #EBCB8B;}
+a:visited{color: #e0b080;}
+a:hover{color: #B48EAD}
+
+#cabecera, #pie{
+    text-align: center;
+}
+
+#menu, #contenido, #info{
+    padding: 0; margin: 0;
+}
+
+#menu{
+    position: absolute;
+    width: 10em;
+}
+
+#contenido{
+    position: relative;
+    left: 10em; 
+    width: 40em;
+}
+
+#info{
+    position: absolute;
+    left: 50em;
+    width: 30em;
+}
+
+#pie{
+    margin-top: 50px;
+}

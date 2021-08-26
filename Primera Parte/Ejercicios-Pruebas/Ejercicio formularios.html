@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio formularios</title>
+</head>
+<body>
+    <h1>Ejercicios</h1>
+    <p>Acceso a apuntes  <a href="..\Formularios.html">formularios.</a></p>
+    <form id = "form-order">
+
+        <p>
+            <label for="name">Nombre*</label>
+            <input type="text" name="name" id="name"
+            placeholder="Cristóbal José"
+            autofocus
+            autocomplete
+            required/>
+        </p>
+
+        <p>
+            <label for="password">Contraseña*</label>
+            <input type="password" name="passwd" id="passwd"
+            placeholder="123abc"
+            pattern="[a-z0-9]{6}"
+            required
+            title="La contraseña debe tener 6 caracteres entre letras minúsculass y números"/>
+            (6 caracteres -> letras minúsculas y números)
+        </p>    
+
+        <p>
+            <label for="phone">Número de teléfono</label>
+            <input type="tel" name="phone" id="phone", placeholder="+34 666555444">
+        </p>
+
+        <p>
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" placeholder="Hola@gmail.com">
+        </p>
+
+        <p>
+            <label for="website">Página web</label>
+            <input type="url" name="url" id="url" placeholder="http://www.hola.com">
+        </p>
+
+        <p>
+            <label for="num">Nº. de temas</label>
+            <input type="number" name="number" id="number" min="0" max="10" placeholder="5" step="0.5">
+        </p>
+
+        <p>
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha" min="2021-01-01"> (Mínimo 1 de enero de 2021)
+        </p>
+
+        <p>
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color" value="#A65474">
+        </p>
+
+        <p>
+            <label for="search">Buscar</label>
+            <input type="search" name="search" id="search" title="Escriba lo que quiere buscar">
+        </p>
+
+        <p>
+            <label for="points">Puntos</label>
+            <input type="range" name="puntos" id="puntos" min="1" max="10">(Entre 1 y 10)
+        </p>
+
+        <p>
+            <fieldset>
+                <legend>Selecciona una prioridad</legend>
+                <p><label><input type="radio" name="priority1" value="baja" checked>Baja</label></p>
+                <p><label><input type="radio" name="priority1" value="media">Media</label></p>
+                <p><label><input type="radio" name="priority1" value="alta">Alta</label></p>
+            </fieldset>
+        </p>
+        <p>
+            <fieldset>
+                <legend>Selecciona una prioridad</legend>
+                <label><input type="radio" name="priority2" value="baja" checked>Baja</label>
+                <label><input type="radio" name="priority2" value="media">Media</label>
+                <label><input type="radio" name="priority2" value="alta">Alta</label>
+            </fieldset>
+        </p>
+
+        <p>
+            <!--hola, así se hace un comentario-->
+            <fieldset>
+                <legend>Cosas que quiero comer</legend>
+                <p><label><input type="checkbox" name="priority3" value="pizza" checked>Pizza</label></p>
+                <p><label><input type="checkbox" name="priority3" value="hamburguesa">Hamburguesa</label></p>
+                <p><label><input type="checkbox" name="priority3" value="chocolate">Chocolate</label></p>
+            </fieldset>
+        </p>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>

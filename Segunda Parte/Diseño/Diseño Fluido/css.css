@@ -1,0 +1,37 @@
+/*Se suele basar en el % de las ventanas*/
+body{
+    background-color: #2E3440; 
+    color: #ECEFF4;
+    padding: 0; margin: 0;
+}
+
+/*Links genéricos*/
+a:link{color: #EBCB8B;}
+a:visited{color: #e0b080;}
+a:hover{color: #B48EAD}
+
+#cabecera, #pie{
+    text-align: center;
+}
+
+#menu, #contenido, #info{
+    float: left;
+    padding: 0; 
+    margin: 0;
+}
+
+#menu{
+    width: 20%;
+}
+
+#contenido{
+    width: 50%;
+}
+
+#info{
+    width: 30%;
+}
+
+#pie{
+    clear: both;
+}

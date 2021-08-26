@@ -1,0 +1,9 @@
+body{background-color: #2E3440;color: #ECEFF4;}
+caption{font-weight: bold;font-size:x-large;}
+td{
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-block: 3px;
+}
+
+td#l-1{text-align: right;}

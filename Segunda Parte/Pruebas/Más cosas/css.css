@@ -1,0 +1,48 @@
+/*El color del fondo será oscuro*/
+body{background-color: #2E3440;color: #ECEFF4;}
+
+a{text-decoration: none;}
+a:link{color: #EBCB8B;}
+a:visited{color: #e0b080;}
+a:hover{color: #B48EAD}
+
+/*Para quitar el punto de la izquierda de la lista*/
+.sin-punto{
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+/*Para la parte HORIZONTAL*/
+.horizontal li{
+    float: left; /*Flotantes para que se coloquen uno al lado del otro*/
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal a{
+    margin: 0;
+    color: #e0b080;
+    background-color: #2E3440;
+    text-align: center;
+    padding: 4px;
+}
+
+.horizontal a:hover, .horizontal a:active{
+    background-color: rgb(62, 66, 75);
+}
+
+/*Para la parte VERTICAL*/
+/*Para que se haga vertical*/
+.vertical a{
+    /*Se define como bloque para poder darle anchura*/
+    display: block; width: 120px;
+    color: #EBCB8B;
+    background-color: #2E3440;
+    text-align: center;
+    padding: 4px;
+}
+
+/*Para cuando se pase el ratón por encima se cambie el color del fondo*/
+.vertical a:hover, .vertical a:active{
+    background-color: rgb(62, 66, 75);
+}

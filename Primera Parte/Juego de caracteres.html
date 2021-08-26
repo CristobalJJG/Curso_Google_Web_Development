@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos de caracteres</title>
+</head>
+<body>
+    <h1>Juegos de caracteres</h1>
+    <p>Siempre se debería usar el mismo <strong>Juego de caracteres para todos los archivos de 1 misma página web, y a ser posible UTF-8</strong></p>
+    <p>Los mejores para usar serían <strong>UTF-8 sin BOM</strong> o <strong>ISO-88591 (Latín1)</strong></p>
+    <p>Latin1 y Latin9 se diferencian unicamente en 8 caracteres, y el único que nos podría servir a nosotros del Latin 9 sería el de €</p>
+
+
+    <h2>¿Cuál es el significado de BOM (UTF-8 sin BOM)?</h2>
+    <p>BOM - Byte Order Mark</p> 
+    <p>Puede ocurrir que si está codificado como UTF-8 con BOM, al generar una página web con php que llame a una página web con html, quede un espacio en blanco, y esto de debería al BOM, con son "unos caracteres" que aparecerían al principio de la página, siendo estos caracteres EF BB BF (ï>>¿)</p>
+    
+</body>
+</html>

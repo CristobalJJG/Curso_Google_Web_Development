@@ -1,0 +1,39 @@
+/*El color del fondo será oscuro*/
+body{
+    background-color: #2E3440;
+    color: #ECEFF4;
+}
+
+
+/*El color por defecto de cualquier li será blanco*/
+li{
+    color: #ECEFF4;
+}
+
+/*Esta forma de hacerlo no será valida*/
+ul#lista1{
+    color: #BF616A;
+    font-weight: bold;
+}
+
+/*Con lista2, cualquier elemento que tenga ul y justo después una li courrirá {}*/
+ul#lista2>li{
+    color: #B48EAD;
+    font-weight: bold;
+}
+
+/*Con lista3 el segundo elemento dentro de un ul que después tenga un li ocurrirá {}*/
+ul#lista3 > li:nth-child(2){
+    font-weight: bold;
+    color: aquamarine;
+}
+
+/*Con el + ocurrirá lo mismo al elemento siguiente al que le ocurra lista2*/
+ul#lista3>li:nth-child(2) + li{
+    font-size: 150%;
+}
+
+/*Con el ~ ocurrirá lo mismo al resto de elementos siguientes que a lista2*/
+ul#lista3>li:nth-child(5) ~ li{
+    color: #daa5cf8c;
+}

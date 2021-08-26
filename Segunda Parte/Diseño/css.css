@@ -1,0 +1,12 @@
+body{background-color: #2E3440;color: #ECEFF4;}
+
+/*Links genéricos*/
+a:link{color: #EBCB8B;}
+a:visited{color: #D6AFCF;}
+a:hover{color: #B48EAD}
+
+legend{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #D8DEE9;
+}

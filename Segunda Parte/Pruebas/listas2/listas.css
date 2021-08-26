@@ -1,0 +1,19 @@
+/*El color del fondo será oscuro*/
+body{background-color: #2E3440;color: #ECEFF4;
+}
+/*El color por defecto de cualquier li será blanco*/
+li{color: #ECEFF4;}
+
+/*Principales modificaciones*/
+.in{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+.out{
+    list-style-type: square;
+    list-style-position: outside;
+}
+.image{
+    list-style-image: url("flecha (Personalizado).png");
+}
+

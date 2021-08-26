@@ -1,0 +1,28 @@
+body{
+    align-content: center;
+    background-color: #2E3440;
+    color: #D8DEE9;
+}
+
+input{
+    background-color: #2E3440;
+    border-color: #81A1C1;
+    align-self:center;
+}
+
+h1, h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{color: #81A1C1;}
+h2{color: #ECEFF4;}
+
+.letra::first-letter{
+    font-size: 2em;
+}
+
+a:link{color: #EBCB8B;}
+a:visited{color: #e0b080;}
+a:hover{color: #B48EAD}
+
+.bold{font-weight: bold;}
+.red{color: #BF616A;}
